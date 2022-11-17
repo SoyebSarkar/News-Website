@@ -55,12 +55,10 @@ app.get('/home',(req,res)=>{
 })
 app.post('/join', async(req,res)=>{
     const {email} = req.body;
-    // if(await)
     let mailOptions = {
         from: 'testcodefor@gmail.com',
         to: email,
         subject: 'Welcome To News Buddy',
-        subject: 'Sending Email using Node.js',
   template: 'index',
   context: {
     title: 'Title Here',
